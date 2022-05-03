@@ -1,6 +1,9 @@
 # Welcome to my GitHub pages repo!
 
-The main branch contains de source code, while the gh-pages branch contains the production build 
+The main branch contains de source code, while the gh-pages branch contains the production build.
+
+The final website can be viewed at https://pedromarquetti.github.io/
+
 ## Getting Started
 
 First, run the development server:
