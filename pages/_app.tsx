@@ -1,12 +1,13 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-
+import Link from "next/link";
 const Footer = () => {
 	return (
 		<>
 			<footer>
-				<a href='/about'>about page</a>
+				<Link href={"about"}>About</Link>
+				<Link href={"/"}>Home</Link>
 			</footer>
 		</>
 	);
