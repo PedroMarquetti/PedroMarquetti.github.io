@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer>
-				<Link href={"about"}>About</Link>
+				<Link href={"/about"}>About</Link>
 				<Link href={"/"}>Home</Link>
 			</footer>
 		</>
