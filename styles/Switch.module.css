@@ -1,4 +1,5 @@
 .switch_container {
+	margin: 10px;
 	position: relative;
 	width: 75px;
 	display: inline-block;
@@ -18,6 +19,9 @@
 	right: 0px;
 }
 .label {
+	-webkit-box-shadow: 5px 5px 5px 0px #3c3c3c40;
+	box-shadow: 5px 5px 5px 0px #3c3c3c40;
+
 	display: block;
 	overflow: hidden;
 	cursor: pointer;
@@ -70,6 +74,9 @@
 	width: 24px;
 
 	margin: 5px;
+	width: 40px;
+	margin: 0px;
+
 	background: #fff;
 	position: absolute;
 	top: 0;
