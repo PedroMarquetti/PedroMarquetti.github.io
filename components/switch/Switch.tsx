@@ -25,21 +25,12 @@ export default function Switch() {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
-	console.log("curr theme on Switcher>> ", theme);
 	const check: boolean = theme === "dark" ? false : true;
-	console.log("curr check>>> ", check);
 
 	const handleChange = (e: any) => {
-		console.log("handling change>>>e.target.checked);>>  ", e.target.checked);
-		console.log("handling change>>> check>> ", check, "theme== ", theme);
-
 		if (!e.target.checked) {
-			console.log("setting theme to dark");
-
 			setTheme("dark");
 		} else {
-			console.log("setting theme to light");
-
 			setTheme("light");
 		}
 	};
