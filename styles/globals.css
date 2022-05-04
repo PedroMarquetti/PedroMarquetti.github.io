@@ -8,10 +8,29 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-/* #__next {
-	height: inherit;
-	width: inherit;
-} */
+:root {
+	--white: #ffffff;
+	--gray1: #dbe1e8;
+	--gray2: #b2becd;
+	--gray3: #6c7983;
+	--gray4: #454e56;
+	--gray5: #2a2e35;
+	--gray6: #12181b;
+}
+[data-theme="dark"] {
+	--background: linear-gradient(to right, var(--gray3), var(--gray5));
+	--foreground: white;
+	background: var(--background);
+	color: var(--white);
+	transition: background 1000ms ease-in-out, color 1000ms ease-in-out;
+}
+[data-theme="light"] {
+	--background: linear-gradient(to right, var(--white), var(--gray1));
+	--foreground: var(--gray6);
+	background: var(--background);
+	color: var(--foreground);
+	transition: background 1000ms ease-in-out, color 800ms ease-in-out;
+}
 a {
 	color: inherit;
 	text-decoration: none;
