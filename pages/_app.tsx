@@ -2,15 +2,15 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider, useTheme } from "next-themes";
-import Switch from "../components/switch/Switch";
 import Footer from "../components/footer/Footer";
 import { useState, useEffect } from "react";
+import Navbar from "../components/navbar/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [mounted, setMounted] = useState(false);
 
 	const { theme, setTheme } = useTheme();
-
+	const handleClick = (e: any) => {};
 	const DefaultHeader = () => {
 		return (
 			<Head>
@@ -28,7 +28,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider>
 			<DefaultHeader />
-			<Switch />
+			{/* <Switch /> */}
+			<Navbar handleClick={handleClick}></Navbar>
 			<Component {...pageProps} />
 			<Footer />
 		</ThemeProvider>
