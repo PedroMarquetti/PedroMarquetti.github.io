@@ -1,48 +1,16 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Link from "next/link";
 import { ThemeProvider, useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import Switch from "../components/switch/Switch";
+import Footer from "../components/footer/Footer";
+import { useState, useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
+	const [mounted, setMounted] = useState(false);
+
 	const { theme, setTheme } = useTheme();
 
-	const ThemeChanger = () => {
-		const [mounted, setMounted] = useState(false);
-		const { theme, setTheme } = useTheme();
-
-		// When mounted on client, now we can show the UI
-		useEffect(() => setMounted(true), []);
-
-		if (!mounted) return null;
-		const handleChange = (e: any) => {
-			console.log(e);
-		};
-		return (
-			<>
-				<Switch></Switch>
-			</>
-			// <div>
-			// 	The current theme is: {theme}
-			// 	<button onClick={() => setTheme("light")}>Light Mode</button>
-			// 	<button onClick={() => setTheme("dark")}>Dark Mode</button>
-			// </div>
-		);
-	};
-
-	const Footer = () => {
-		return (
-			<>
-				<footer>
-					{/* <Link href={"/about"}>About</Link>
-				<Link href={"/"}>Home</Link> */}
-					{/* <ThemeChanger></ThemeChanger> */}
-				</footer>
-			</>
-		);
-	};
 	const DefaultHeader = () => {
 		return (
 			<Head>
@@ -54,13 +22,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 			</Head>
 		);
 	};
+	useEffect(() => setMounted(true), []);
 
+	if (!mounted) return null;
 	return (
 		<ThemeProvider>
-			<Switch></Switch>
 			<DefaultHeader />
+			<Switch />
 			<Component {...pageProps} />
-			{/* <Footer /> */}
+			<Footer />
 		</ThemeProvider>
 	);
 }
