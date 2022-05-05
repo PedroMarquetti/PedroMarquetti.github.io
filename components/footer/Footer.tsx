@@ -13,9 +13,10 @@ export default function Footer() {
 					<a>
 						<Image
 							loader={myLoader}
+							unoptimized={true}
 							src={GithubLogo}
-							width={30}
-							height={30}
+							// width={30}
+							// height={30}
 							alt='Visit me on github'></Image>
 					</a>
 				</Link>
