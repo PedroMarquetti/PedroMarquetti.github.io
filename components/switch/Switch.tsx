@@ -2,27 +2,7 @@ import styles from "../../styles/Switch.module.css";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-const ThemeChanger = () => {
-	const [mounted, setMounted] = useState(false);
-	const { theme, setTheme } = useTheme();
-
-	// When mounted on client, now we can show the UI
-	useEffect(() => setMounted(true), []);
-
-	if (!mounted) return null;
-
-	return (
-		<div>
-			The current theme is: {theme}
-			<button onClick={() => setTheme("light")}>Light Mode</button>
-			<button onClick={() => setTheme("dark")}>Dark Mode</button>
-			data-theme {document.documentElement.getAttribute("data-theme")}
-		</div>
-	);
-};
-
 export default function Switch() {
-	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
 	const check: boolean = theme === "dark" ? false : true;
@@ -34,10 +14,6 @@ export default function Switch() {
 			setTheme("light");
 		}
 	};
-	// When mounted on client, now we can show the UI
-	useEffect(() => setMounted(true), []);
-
-	if (!mounted) return null;
 	return (
 		<div className={styles.switch_container}>
 			<input
