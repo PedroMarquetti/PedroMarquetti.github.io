@@ -21,6 +21,7 @@
 
 	height: 100%;
 	width: 100%;
+	background: var(--background);
 
 	/* border-left: #12181b 10px;
 	border-right: 10px black; */
