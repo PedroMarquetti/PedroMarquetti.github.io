@@ -23,7 +23,7 @@ export default function Topnav(props: {
 	// </li>;
 	return (
 		<ul className={styles.list}>
-			<li className={styles.item} tabIndex={0} style={{ width: 13 }}>
+			<li className={styles.item} style={{ width: 13 }}>
 				<Switch></Switch>
 			</li>
 		</ul>
