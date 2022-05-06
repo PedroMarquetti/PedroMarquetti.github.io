@@ -18,6 +18,7 @@ export default function Footer() {
 							// width={30}
 							// height={30}
 							alt='Visit me on github'></Image>
+						<p>my Github profile</p>
 					</a>
 				</Link>
 				{/* <Image
@@ -26,7 +27,7 @@ export default function Footer() {
 					layout='fill'>
 					<Link href={"github.com/pedromarquetti/"}></Link>
 				</Image> */}
-				<Link href={"/about"}>About</Link>
+				<Link href={"/about"}>About me</Link>
 				<Link href={"/"}>Home</Link>
 			</footer>
 		</>
