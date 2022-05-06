@@ -1,7 +1,8 @@
 .switch_container {
 	margin: 15px;
 	position: relative;
-	width: 75px;
+	width: 100px;
+	height: 34px;
 
 	display: inline-block;
 	vertical-align: middle;
@@ -31,6 +32,7 @@
 	-webkit-box-shadow: 5px 5px 5px 0px #3c3c3c40;
 	box-shadow: 5px 5px 5px 0px #3c3c3c40;
 
+	height: 34px;
 	display: block;
 	overflow: hidden;
 	cursor: pointer;
@@ -55,23 +57,23 @@
 	padding: 0;
 	line-height: 34px;
 	font-size: 14px;
-	/* transition: all 0.3s ease-in 0s; */
+	transition: all 0.3s ease-in 0s;
 
 	color: white;
 	font-weight: bold;
 	box-sizing: border-box;
 }
 .inner:before {
-	content: "🌝";
-	text-transform: uppercase;
+	content: "light";
+	/* text-transform: uppercase; */
 	padding-left: 10px;
-	background-color: rgb(145, 255, 0);
+	background-color: rgb(0, 98, 255);
 
-	color: #fff;
+	/* color: #fff; */
 }
 .inner:after {
-	content: "🌚";
-	text-transform: uppercase;
+	content: "dark";
+	/* text-transform: uppercase; */
 	padding-right: 10px;
 	background-color: #bbb;
 	color: #fff;
@@ -86,7 +88,7 @@
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	right: 40px;
+	right: 60px;
 	border: 0 solid #bbb;
 	border-radius: 24px;
 	transition: all 0.3s ease-in 0s;
