@@ -7,7 +7,9 @@ export default function Switch() {
 	const check: boolean = theme === "dark" ? false : true;
 
 	const handleChange = (e: any) => {
-		if (!e.target.checked) {
+		console.log("curr aria-checked:: ", e.target.getAttribute("aria-checked"));
+
+		if (e.target.getAttribute("aria-checked") === "true") {
 			setTheme("dark");
 		} else {
 			setTheme("light");
@@ -15,19 +17,30 @@ export default function Switch() {
 	};
 	return (
 		<div className={styles.switch_container}>
-			<input
-				className={styles.checkbox}
-				type='checkbox'
-				checked={check}
-				// current input (checkbox) status>> true == dark && false ==  light mode
-				name='theme-switcher'
-				id='theme-switcher'
-				onChange={handleChange}
-			/>
-			<label className={styles.label} htmlFor='theme-switcher'>
-				<span className={styles.inner}></span>
-				<span className={styles.switch}></span>
+			<button
+				role='switch'
+				onClick={handleChange}
+				aria-checked={check}
+				id='theme-switch'
+				className='switch'>
+				<span aria-hidden='true'>light</span>
+				<span aria-hidden='true'>dark</span>
+			</button>
+			<label htmlFor='theme-switch' className={styles.label}>
+				Theme Switch
 			</label>
+			{/* <button
+				role='switch'
+				onClick={handleChange}
+				aria-checked={check}
+				id='theme-switch'
+				className={styles.buttonSwitch}>
+				<span>on</span>
+				<span>off</span>
+			</button>
+			<label htmlFor='theme-switch' className={styles.labelSwitch}>
+				Theme Switch
+			</label> */}
 		</div>
 	);
 }

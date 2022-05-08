@@ -1,0 +1,51 @@
+button.switch {
+	margin: 0;
+	padding: 0;
+
+	width: fit-content;
+	height: 34px;
+
+	border: 2px solid black;
+	border-radius: 34px;
+
+	background: rgb(78, 78, 78);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	margin-right: 0.25em;
+	line-height: 20px;
+	vertical-align: middle;
+	text-align: center;
+	font: 12px "Open Sans", "Arial", serif;
+}
+
+button.switch span {
+	padding: 0 10px;
+	pointer-events: none;
+	top: 56%;
+
+	width: 50%;
+	display: inline-block;
+
+	vertical-align: middle;
+
+	border-radius: 34px;
+}
+[role="switch"][aria-checked="false"] :first-child,
+[role="switch"][aria-checked="true"] :last-child {
+	background: rgb(78, 78, 78);
+	color: rgb(78, 78, 78);
+}
+[role="switch"][aria-checked="false"] :last-child,
+[role="switch"][aria-checked="true"] :first-child {
+	/* currently active  */
+	background: white;
+	height: 30px;
+	padding-top: 8px;
+	vertical-align: middle;
+	color: black;
+}
