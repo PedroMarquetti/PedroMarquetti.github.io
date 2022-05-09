@@ -22,9 +22,6 @@
 	height: 100%;
 	width: 100%;
 	background: var(--background);
-
-	/* border-left: #12181b 10px;
-	border-right: 10px black; */
 }
 
 /* Topnav list items */
@@ -33,7 +30,10 @@
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
+
 	min-width: 70px;
+	max-width: fit-content;
+
 	z-index: inherit;
 }
 
