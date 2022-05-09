@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Dropdown from "./Dropdown";
+import Dropdown from "./Dropdown/Dropdown";
 import { Dropdowntype } from "../../types/types";
-import Topnav from "./Topnav";
+import Topnav from "./Topnav/Topnav";
 import styles from "../../styles/Nav.module.css";
 
 export default function Navbar(props: { handleClick: any }) {

@@ -1,6 +1,6 @@
-import { Dropdowntype } from "../../types/types";
-import styles from "../../styles/Nav.module.css";
-import Switch from "../switch/Switch";
+import { Dropdowntype } from "../../../types/types";
+import styles from "../../../styles/Nav.module.css";
+import Switch from "../../switch/Switch";
 import Item from "./Item"; // list item for top nav
 
 export default function Topnav(props: {
@@ -27,6 +27,7 @@ export default function Topnav(props: {
 			<li className={styles.item} style={{ width: 13 }}>
 				<Switch></Switch>
 			</li>
+			<Item id='Blog' handleHover={handleHover} text='blog'></Item>
 		</ul>
 	);
 }

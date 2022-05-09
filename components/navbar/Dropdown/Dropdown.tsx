@@ -1,6 +1,6 @@
 import React from "react";
-import { Dropdowntype } from "../../types/types";
-import styles from "../../styles/Nav.module.css";
+import { Dropdowntype } from "../../../types/types";
+import styles from "../../../styles/Nav.module.css";
 
 export default function Dropdown(props: {
 	dropDown: Dropdowntype["type"];
@@ -35,10 +35,7 @@ export default function Dropdown(props: {
 	//         </ul>
 	//     );
 	switch (dropDown) {
-		case "":
-			return <></>;
 		default:
 			return <></>;
 	}
-	return <></>;
 }
