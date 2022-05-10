@@ -18,7 +18,7 @@ body {
 	--gray6: #12181b;
 }
 [data-theme="dark"] {
-	--background: linear-gradient(to right, var(--gray3), var(--gray5));
+	--background: linear-gradient(to right, var(--gray4), var(--gray6));
 	--foreground: white;
 	background: var(--background);
 	color: var(--white);
@@ -38,6 +38,7 @@ a {
 
 ul {
 	list-style-type: none;
+	list-style: none;
 
 	margin: 0;
 	padding: 0;
@@ -45,13 +46,16 @@ ul {
 
 li {
 	cursor: pointer;
+
 	text-align: center;
 }
 * {
 	box-sizing: border-box;
 	height: fit-content;
 }
-
+code {
+	background: rgb(60, 60, 60);
+}
 footer {
 	display: flex;
 	padding: 2rem 0;
