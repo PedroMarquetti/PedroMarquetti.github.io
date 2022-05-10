@@ -27,7 +27,6 @@ export default function Topnav(props: {
 			<li className={styles.item} style={{ width: 13 }}>
 				<Switch></Switch>
 			</li>
-			<Item id='Blog' handleHover={handleHover} text='blog'></Item>
 		</ul>
 	);
 }
