@@ -9,7 +9,18 @@ export default function Footer() {
 	return (
 		<>
 			<footer>
-				<Link href={"https://github.com/pedromarquetti/"} target='_blank'>
+				<a
+					href={"https://github.com/pedromarquetti/"}
+					target='_blank'
+					rel='noreferrer'>
+					<Image
+						loader={myLoader}
+						unoptimized={true}
+						src={GithubLogo}
+						alt='Visit me on github'></Image>
+					<p>my Github profile</p>
+				</a>
+				{/* <Link href={"https://github.com/pedromarquetti/"} target={"_blank"}>
 					<a>
 						<Image
 							loader={myLoader}
@@ -18,7 +29,7 @@ export default function Footer() {
 							alt='Visit me on github'></Image>
 						<p>my Github profile</p>
 					</a>
-				</Link>
+				</Link> */}
 				<Link href={"/about"}>About me</Link>
 				<Link href={"/"}>Home</Link>
 			</footer>
