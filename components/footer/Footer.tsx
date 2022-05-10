@@ -15,18 +15,10 @@ export default function Footer() {
 							loader={myLoader}
 							unoptimized={true}
 							src={GithubLogo}
-							// width={30}
-							// height={30}
 							alt='Visit me on github'></Image>
 						<p>my Github profile</p>
 					</a>
 				</Link>
-				{/* <Image
-					src={"../../public/images/GitHub-Mark-32px"}
-					alt='Find me on Github'
-					layout='fill'>
-					<Link href={"github.com/pedromarquetti/"}></Link>
-				</Image> */}
 				<Link href={"/about"}>About me</Link>
 				<Link href={"/"}>Home</Link>
 			</footer>
