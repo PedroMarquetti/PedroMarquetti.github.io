@@ -19,6 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta name='description' content='My github pages made with NextJS' />
 				<meta content='text/html;charset=UTF-8' />
 				<meta name='author' content='Pedro H L Marquetti' />
+				<meta name='viewport' content='initial-scale=1.0, width=device-width' />
+
 				<link rel='icon' href='./favicon.ico' />
 			</Head>
 		);
