@@ -20,21 +20,35 @@ const Home: NextPage = () => {
 				</p>
 				<p>
 					The{" "}
-					<a href='https://www.flaticon.com/free-icons/mail' title='mail icons'>
+					<a
+						target='_blank'
+						rel='noreferrer'
+						href='https://www.flaticon.com/free-icons/mail'
+						title='mail icons'>
 						&quot;Mail icon&quot;
 					</a>
 					,{" "}
 					<a
+						target='_blank'
+						rel='noreferrer'
 						href='https://www.flaticon.com/free-icons/about'
 						title='about icons'>
 						&quot;About icon&quot;
 					</a>{" "}
 					and{" "}
-					<a href='https://www.flaticon.com/free-icons/home' title='home icons'>
+					<a
+						target='_blank'
+						rel='noreferrer'
+						href='https://www.flaticon.com/free-icons/home'
+						title='home icons'>
 						&quot;Home icon&quot;
 					</a>{" "}
 					can be found at{" "}
-					<a href='https://www.flaticon.com' title='Flat icons'>
+					<a
+						target='_blank'
+						rel='noreferrer'
+						href='https://www.flaticon.com'
+						title='Flat icons'>
 						Flat Icon
 					</a>{" "}
 					website
