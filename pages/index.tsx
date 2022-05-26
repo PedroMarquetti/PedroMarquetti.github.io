@@ -18,6 +18,27 @@ const Home: NextPage = () => {
 					I&apos;ll post here some basic projects, some info, maybe some
 					tutorials? who knows... take a look around
 				</p>
+				<p>
+					The{" "}
+					<a href='https://www.flaticon.com/free-icons/mail' title='mail icons'>
+						&quot;Mail icon&quot;
+					</a>
+					,{" "}
+					<a
+						href='https://www.flaticon.com/free-icons/about'
+						title='about icons'>
+						&quot;About icon&quot;
+					</a>{" "}
+					and{" "}
+					<a href='https://www.flaticon.com/free-icons/home' title='home icons'>
+						&quot;Home icon&quot;
+					</a>{" "}
+					can be found at{" "}
+					<a href='https://www.flaticon.com' title='Flat icons'>
+						Flat Icon
+					</a>{" "}
+					website
+				</p>
 			</div>
 		</div>
 	);
