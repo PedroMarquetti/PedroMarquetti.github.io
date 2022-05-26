@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 						target='_blank'
 						rel='noreferrer'
 						href='https://www.flaticon.com/free-icons/mail'
-						title='mail icons'>
+						title='Mail icons created by Freepik - Flaticon'>
 						&quot;Mail icon&quot;
 					</a>
 					,{" "}
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
 						target='_blank'
 						rel='noreferrer'
 						href='https://www.flaticon.com/free-icons/about'
-						title='about icons'>
+						title='About icons created by Tempo_doloe - Flaticon'>
 						&quot;About icon&quot;
 					</a>{" "}
 					and{" "}
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
 						target='_blank'
 						rel='noreferrer'
 						href='https://www.flaticon.com/free-icons/home'
-						title='home icons'>
+						title='Home icons created by Aswell Studio - Flaticon'>
 						&quot;Home icon&quot;
 					</a>{" "}
 					can be found at{" "}
