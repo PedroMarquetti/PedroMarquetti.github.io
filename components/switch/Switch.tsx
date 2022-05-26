@@ -7,14 +7,13 @@ export default function Switch() {
 	const check: boolean = theme === "dark" ? false : true;
 
 	const handleChange = (e: any) => {
-		console.log("curr aria-checked:: ", e.target.getAttribute("aria-checked"));
-
 		if (e.target.getAttribute("aria-checked") === "true") {
 			setTheme("dark");
 		} else {
 			setTheme("light");
 		}
 	};
+
 	return (
 		<div className={styles.switch_container}>
 			<button
