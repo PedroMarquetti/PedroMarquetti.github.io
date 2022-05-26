@@ -33,13 +33,6 @@ export default function Footer() {
 						alt='Mail me!'></Image>
 					<p>Mail me!</p>
 				</a>
-				{/* 
-				<a href="https://www.flaticon.com/free-icons/mail" title="mail icons">Mail icons created by Freepik - Flaticon</a> 
-				<a href="https://www.flaticon.com/free-icons/about" title="about icons">About icons created by Tempo_doloe - Flaticon</a>
-
-				<a href="https://www.flaticon.com/free-icons/home" title="home icons">Home icons created by Aswell Studio - Flaticon</a>
-				
-				*/}
 				<Link href={"/about"}>
 					<a>
 						<Image
@@ -52,7 +45,6 @@ export default function Footer() {
 						<p>About me</p>
 					</a>
 				</Link>
-
 				<Link href={"/"}>
 					<a>
 						<Image
@@ -65,29 +57,6 @@ export default function Footer() {
 						<p>Home</p>
 					</a>
 				</Link>
-				{/* <ul>
-					<li>
-						<a
-							href='https://www.flaticon.com/free-icons/mail'
-							title='mail icons'>
-							Mail icons created by Freepik - Flaticon
-						</a>{" "}
-					</li>
-					<li>
-						<a
-							href='https://www.flaticon.com/free-icons/about'
-							title='about icons'>
-							About icons created by Tempo_doloe - Flaticon
-						</a>
-					</li>
-					<li>
-						<a
-							href='https://www.flaticon.com/free-icons/home'
-							title='home icons'>
-							Home icons created by Aswell Studio - Flaticon
-						</a>
-					</li>
-				</ul> */}
 			</footer>
 		</>
 	);
