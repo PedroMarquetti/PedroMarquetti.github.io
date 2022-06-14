@@ -17,6 +17,7 @@ export default function Switch() {
 	return (
 		<div className={styles.switch_container}>
 			<button
+				name='theme switch'
 				role='switch'
 				onClick={handleChange}
 				aria-checked={check}
