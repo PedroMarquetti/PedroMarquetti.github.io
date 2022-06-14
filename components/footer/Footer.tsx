@@ -13,6 +13,7 @@ export default function Footer() {
 		<>
 			<footer>
 				<a
+					title='My Github profile'
 					href={"https://github.com/pedromarquetti/"}
 					target='_blank'
 					rel='noreferrer'>
@@ -23,7 +24,7 @@ export default function Footer() {
 						alt='Visit me on github'></Image>
 					<p>My Github profile</p>
 				</a>
-				<a href='mailto:pedro.marquettti@gmail.com'>
+				<a title='Mail me!' href='mailto:pedro.marquettti@gmail.com'>
 					<Image
 						loader={myLoader}
 						unoptimized={true}
@@ -34,7 +35,7 @@ export default function Footer() {
 					<p>Mail me!</p>
 				</a>
 				<Link href={"/about"}>
-					<a>
+					<a title='About me'>
 						<Image
 							loader={myLoader}
 							unoptimized={true}
@@ -46,7 +47,7 @@ export default function Footer() {
 					</a>
 				</Link>
 				<Link href={"/"}>
-					<a>
+					<a title='Home'>
 						<Image
 							loader={myLoader}
 							unoptimized={true}
