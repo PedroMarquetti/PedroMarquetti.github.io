@@ -22,14 +22,14 @@ body {
 	--foreground: white;
 	background: var(--background);
 	color: var(--white);
-	transition: background 1000ms ease-in-out, color 1000ms ease-in-out;
+	transition: background 1000ms ease-out, color 800ms ease-out;
 }
 [data-theme="light"] {
 	--background: linear-gradient(to right, var(--white), var(--gray1));
 	--foreground: var(--gray6);
 	background: var(--background);
 	color: var(--foreground);
-	transition: background 1000ms ease-in-out, color 800ms ease-in-out;
+	transition: background 1000ms ease-out, color 800ms ease-out;
 }
 a {
 	color: inherit;
@@ -59,12 +59,12 @@ li {
 [data-theme="dark"] code {
 	background: rgb(0, 0, 0);
 	color: white;
-	transition: background 100ms ease-in-out, color 800ms ease-in-out;
+	transition: background 100ms ease-out, color 800ms ease-out;
 }
 [data-theme="light"] code {
 	background: rgb(255, 255, 255);
 	color: rgb(0, 0, 0);
-	transition: background 100ms ease-in-out, color 800ms ease-in-out;
+	transition: background 100ms ease-out, color 800ms ease-out;
 }
 footer {
 	display: flex;
